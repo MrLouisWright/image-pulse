@@ -1,0 +1,54 @@
+{
+  "name": "image-pulse",
+  "version": "1.0.0",
+  "description": "Find oversized and unoptimised images in a built static site: heavy files, images far wider than displayed, JPEG/PNG without AVIF/WebP, missing width/height, srcset and sizes, animated GIFs, opaque PNG photos, bloated SVGs. Reads image headers, no network. SARIF, GitHub Action. Zero deps.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "image-pulse": "bin/image-pulse.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "action.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "images",
+    "performance",
+    "avif",
+    "webp",
+    "srcset",
+    "core-web-vitals",
+    "static-site",
+    "lighthouse",
+    "sarif",
+    "github-action"
+  ],
+  "author": "Louis Wright <hello@louiswright.co.uk> (https://github.com/MrLouisWright)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrLouisWright/image-pulse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrLouisWright/image-pulse/issues"
+  },
+  "homepage": "https://github.com/MrLouisWright/image-pulse#readme"
+}
