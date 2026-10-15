@@ -1,5 +1,7 @@
 # image-pulse
 
+[![npm version](https://img.shields.io/npm/v/image-pulse.svg)](https://www.npmjs.com/package/image-pulse) [![CI](https://github.com/MrLouisWright/image-pulse/actions/workflows/ci.yml/badge.svg)](https://github.com/MrLouisWright/image-pulse/actions/workflows/ci.yml) [![Node](https://img.shields.io/node/v/image-pulse.svg)](https://nodejs.org) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > Find oversized, unoptimised and wrongly formatted images in your built site, before they slow down your Largest Contentful Paint.
 
 Images are usually the heaviest part of a page and the most common LCP element. `image-pulse` scans the HTML and image files in your static build output (Astro, Hugo, Eleventy, Jekyll, Next.js export, Docusaurus, plain HTML), reads each image's real dimensions from its file header, and compares them with how the page uses it: a 2400px photo shown at 600px, a 400 kB JPEG with no AVIF or WebP alternative, a hero without width and height, a 2 MB animated GIF.
