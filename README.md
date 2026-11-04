@@ -168,11 +168,19 @@ The action runs the bundled CLI with Node 20; it has no dependencies to install.
 
 ## Library
 
+Install it in your project first:
+
+```bash
+npm install --save-dev image-pulse
+```
+
 ```js
 import { check, imageInfo } from "image-pulse";
 imageInfo(readFileSync("hero.jpg")); // { format: "jpeg", width: 1600, height: 900, progressive: true }
 const report = check("dist", { maxBytes: 200 * 1024 });
 ```
+
+The package is ESM-only (there is no CommonJS build): use `import`, or `await import("image-pulse")` from CommonJS.
 
 Types are included.
 
